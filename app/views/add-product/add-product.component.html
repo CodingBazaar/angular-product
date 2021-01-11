@@ -1,0 +1,35 @@
+<h1>Fill the product details</h1><br>
+<div class="container addProdForm">
+	<form autocomplete="off">
+		<div class="form-group">
+			<label for="ProductName" class="label-text">Product Name</label>
+			<input
+            type="text"
+            class="form-control"
+            id="ProductName"
+            placeholder="Enter email"
+            ngModel
+            name="demo"
+            #demo="ngModel"
+            (change)="log(demo)"
+
+          />
+    </div>
+			<div class="form-group">
+				<label for="Price" class="label-text">Price</label>
+				<input
+            type="email"
+            class="form-control"
+            id="Price"
+            placeholder="Enter email"
+            name="email"
+          />
+    </div>
+				<div class="form-group">
+					<label for="ProductDescription" class="label-text">Product Description</label>
+					<textarea class="form-control" id="ProductDescription" rows="3"></textarea>
+				</div>
+
+				<button type="submit" class="btn btn-default">Submit</button>
+	</form>
+</div>
